@@ -78,8 +78,6 @@ javadoc {
             "https://docs.oracle.com/javase/8/docs/api/",
             "http://www.reactive-streams.org/reactive-streams-${reactiveStreamsVersion}-javadoc/"
     )
-
-    finalizedBy javadocCleanup
 }
 
 animalsniffer {
@@ -101,7 +99,7 @@ jar {
             "Multi-Release": "true"
     )
 
-    moduleInfoPath = 'src/main/module/module-info.java'
+//    moduleInfoPath = 'src/main/module/module-info.java'
 }
 
 license {
