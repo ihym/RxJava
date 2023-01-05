@@ -165,13 +165,9 @@ jacocoTestReport {
 
 check.dependsOn jacocoTestReport
 
-checkstyle {
-    configFile = project.file("config/checkstyle/checkstyle.xml")
-    configProperties = [
-            "checkstyle.suppressions.file": project.file("config/checkstyle/suppressions.xml"),
-            "checkstyle.header.file"      : project.file("config/license/HEADER_JAVA")
-    ]
-}
+//checkstyle {
+//    configDirectory = project.file("config/checkstyle")
+//}
 
 if (project.hasProperty("releaseMode")) {
     logger.lifecycle("ReleaseMode: {}", project.releaseMode)

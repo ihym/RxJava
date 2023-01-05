@@ -5,12 +5,12 @@
 
 <module name="Checker">
     <module name="SuppressionFilter">
-        <property name="file" value="${checkstyle.suppressions.file}"/>
+        <property name="file" value="${config_loc}/suppressions.xml"/>
     </module>
 
     <!-- Headers -->
     <module name="Header">
-        <property name="headerFile" value="${checkstyle.header.file}"/>
+        <property name="headerFile" value="${config_loc}/../license/HEADER_JAVA"/>
         <property name="fileExtensions" value="java"/>
     </module>
 
